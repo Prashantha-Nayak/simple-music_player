@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple music player</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/music.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="full-body">
+        <div id="music">
+            <div class="background_gif">
+            <div class="images">
+            <div class="subtitle">
+                
+            </div>
+               
+            </div>
+        </div>
+
+            <div class="musics">
+                
+
+                <audio controls>
+                    <source src="musics/Hukum Thalaivar Alappara Jailer 128 Kbps.mp3" type="audio/ogg">
+                    <source src="musics/Naa Ready Leo 128 Kbps.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio>
+                  <input type="range"value="0" id="progress">
+                  <div class="controls" id="song">
+                    
+                    <div><i class="fa fa-backward" id="previousButton"></i></div>
+                    <div onclick="playPause()"><i class="fa fa-play" id="ctrlIcon"></i></div>
+                    <div><i class="fa fa-forward"  id="nextButton"></i></div>
+                  
+                  </div>
+                  <div onclick="shuffleSongs()"><i class="fa fa-random" id="shuffleButton"></i></div>
+                  <i class="fa-solid fa-album-collection-circle-user"></i>
+            </div>
+
+        </div>
+        
+
+
+
+    </div>
+    <script src="java Script/music.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+
+    </body>
+
+</html>
