@@ -7,6 +7,12 @@ body
     background-position: center;
     background-size: cover;
 }
+@media (max-width: 768px) {
+    body {
+        background-size: contain; /* Adjust the background size for smaller screens */
+        background-attachment: scroll; /* Allow scrolling on smaller screens */
+    }
+}
 .full-body
 {
     background-color: rgba(0, 0, 0, 0.647);
