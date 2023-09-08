@@ -1,18 +1,19 @@
 body
 {
-    background-image: url(../images/back.jpg);
+  background-image: url(../images/back.jpg);
     
     background-repeat: no-repeat;
     overflow: hidden;
     background-position: center;
     background-size: cover;
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
 }
-@media (max-width: 768px) {
-    body {
-        background-size: contain; /* Adjust the background size for smaller screens */
-        background-attachment: scroll; /* Allow scrolling on smaller screens */
-    }
-}
+
 .full-body
 {
     background-color: rgba(0, 0, 0, 0.647);
